@@ -11,6 +11,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         Text("Hello, World!")
+        .fontWeight(.regular) //fuente negrita
+        //.font(.largeTitle)   //tamaño fuente
+        //.font(.system(.largeTitle, design: .rounded))   //estilo redondeado
+        //.font(.system(size: 35, design: .rounded))   //estilo redondeado y con tamaño fijo
+            .font(.custom("Gill Sans", size: 25))   //estilo helvetica y 25
+        .foregroundColor(.blue) //color de texto o con UIColor
     }
 }
 
