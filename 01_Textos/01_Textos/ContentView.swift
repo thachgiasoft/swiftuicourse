@@ -20,8 +20,12 @@ struct ContentView: View {
         .multilineTextAlignment(.center)    //alinear text
         .lineLimit(3)   //solo 3 lineas
         .truncationMode(.head)
-        
-        
+        .lineSpacing(10)    //espacio entre lineas
+        .padding(30)    //espacio alrededor
+        //.rotationEffect(.degrees(45), anchor: UnitPoint(x: 0, y: 0))   //rotar 45 grados y con un anchor - ancla - fijo
+        .rotation3DEffect(.degrees(50), axis: (x: 1, y: 0, z: 0))   //rotar en 3d
+        .shadow(color: .gray, radius: 1, x: 0, y: 5)   //sombra del texto 
+                            
     }
 }
 
