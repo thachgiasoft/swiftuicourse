@@ -21,61 +21,56 @@ struct ContentView: View {
             HeaderView()
             
             //hstack para colocar dos planes
-            HStack {
+            HStack (spacing: 8){
                 //tarjeta 1
-                VStack{
-                    Text("Plan basico")
-                        .font(.system(.title,design: .rounded))
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                    
-                    Text("$9.99")
-                        .font(.system(.body,design: .rounded))
-                        .fontWeight(.heavy)
-                        .foregroundColor(.white)
-                    
-                    Text("Un curso incluido")
-                        .font(.system(.headline,design: .rounded))
-                        .foregroundColor(.white)
-                    
-                }
-                .padding(20)
-                .background(Color.green)
-                .cornerRadius(10)
-                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 100)
+                PriceingView(title: "Plan basico", price: "$9.99", subtitle: "Un solo curso", colorText: .white, backgroundColor: .green)
                 
-                //tarjeta 2
-                VStack{
-                    Text("Plan carrera")
-                        .font(.system(.title,design: .rounded))
+                //Agregamos ZStack
+                ZStack{
+                    //tarjeta 2
+                    PriceingView(title: "Plan carrera", price: "$19.99", subtitle: "Todo una carrera", colorText: .white, backgroundColor: .gray)
+                    
+                    Text("El mejor para empezar")
+                        .font(.system(.caption, design: .rounded))
+                        .foregroundColor(.white)
                         .fontWeight(.bold)
-                        .foregroundColor(.white)
-                    
-                    Text("$19.99")
-                        .font(.system(.body,design: .rounded))
-                        .fontWeight(.heavy)
-                        .foregroundColor(.white)
-                    
-                    Text("Todo una carrera")
-                        .font(.system(.headline,design: .rounded))
-                        .foregroundColor(.white)
-                    
+                        .padding(8)
+                        .background(Color(red: 240/255, green: 180/255, blue: 50/255))
+                        //mover etiqueta para una posicion
+                        //negativo para el lado contrario
+                        .offset(x: 0, y: -80)
                 }
-                .padding(20)
-                .background(Color.gray)
-                .cornerRadius(10)
-                //maxwidth infinity jala toada la pantalla
-                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 100)
-                
-            }.padding()
+                                
+            }.padding(.horizontal)
             //agregamos estilos a vstack
-        }
+            
+            //Agregamos ZStack debajo con otra tarjea
+            ZStack{
+                //tarjeta 2
+                PriceingView(title: "Plan definitivo", price: "$99.99", subtitle: "Todo una carrera online", colorText: .white, backgroundColor: .black).padding(.horizontal)
+                
+                Image(systemName: "heart.fill")
+                    .font(.system(size: 30))
+                    .foregroundColor(.red)
+                    .offset(x: 0, y: -40)
+                
+                Text("Un master del universo")
+                    .font(.system(.caption, design: .rounded))
+                    .foregroundColor(.white)
+                    .fontWeight(.bold)
+                    .padding(8)
+                    .background(Color(red: 240/255, green: 180/255, blue: 50/255))
+                    //mover etiqueta para una posicion
+                    //negativo para el lado contrario
+                    .offset(x: 0, y: -80)
+            }
+        }.padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().background(Color.white)
     }
 }
 
@@ -92,3 +87,46 @@ struct HeaderView: View {
         }
     }
 }
+
+//extaemos price view
+struct PriceingView: View {
+    
+    //cramos varialbes para la etiqueta
+    var title: String
+    var price: String
+    var subtitle: String
+    var colorText: Color
+    var backgroundColor: Color
+    
+    var body: some View {
+        VStack{
+            Text(title)
+                .font(.system(.title,design: .rounded))
+                .fontWeight(.bold)
+                .foregroundColor(colorText)
+            
+            Text(price)
+                .font(.system(.body,design: .rounded))
+                .fontWeight(.heavy)
+                .foregroundColor(colorText)
+            
+            Text(subtitle)
+                .font(.system(.headline,design: .rounded))
+                .foregroundColor(colorText)
+            
+        }
+        .padding(20)
+        .background(backgroundColor)
+        .cornerRadius(10)
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 100)
+    }
+}
+
+/*
+ cvstate
+ profleaction
+ repsitory
+ profilerepository
+ 
+ LIGHTBULB
+ */
