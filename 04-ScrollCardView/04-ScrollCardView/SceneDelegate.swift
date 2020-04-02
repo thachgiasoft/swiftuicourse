@@ -1,9 +1,9 @@
 //
 //  SceneDelegate.swift
-//  03-stacks
+//  04-ScrollCardView
 //
-//  Created by MACBOOK on 29/03/20.
-//  Copyright © 2020 MACBOOK. All rights reserved.
+//  Created by John Alexis Cristobal Jimenez  on 4/2/20.
+//  Copyright © 2020 johnvera. All rights reserved.
 //
 
 import UIKit
@@ -20,8 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        //let contentView = ContentView()
-        let contentView = ExerciseView()
+        let contentView = ContentView()
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
