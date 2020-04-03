@@ -19,21 +19,28 @@ struct CardView: View {
             
             //vstack alineado a la izquierda
             //uso de colores primarios y secundarios 
-            VStack(alignment: .leading, spacing: 4){
+            VStack(alignment: .leading){
                 Text("Nombre instructor")
                     .font(.headline)
                     .foregroundColor(.secondary)
                 
-                Text("Curso")
+                Text("Curso de diseño de apps para ios con swift ui".uppercased())
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(.primary)
                     .lineLimit(2)
                 
-                Text("$Precio")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-                
+                //ponemos dos colores para destacar el mas nuevo
+                HStack{
+                    Text("$Precio")
+                        .font(.subheadline)
+                        .foregroundColor(.primary)
+
+                    Text("$Precio antiguo")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                        .strikethrough()                        
+                }
             }
         }
     }
