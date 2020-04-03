@@ -10,7 +10,32 @@ import SwiftUI
 
 struct CardView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        //vstack para poner pila con imagen
+        VStack{
+            Image("magic")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+            
+            //vstack alineado a la izquierda
+            //uso de colores primarios y secundarios 
+            VStack(alignment: .leading, spacing: 4){
+                Text("Nombre instructor")
+                    .font(.headline)
+                    .foregroundColor(.secondary)
+                
+                Text("Curso")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(.primary)
+                    .lineLimit(2)
+                
+                Text("$Precio")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                
+            }
+        }
     }
 }
 
