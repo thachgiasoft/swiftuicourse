@@ -32,12 +32,20 @@ struct ContentView: View {
             
         }
         //.animation(.linear)    //puede ser la animacion en toda la zstack
-        .animation(.spring(response: 0.5, dampingFraction: 0.4, blendDuration: 0.5))
+        //.animation(.spring(response: 0.5, dampingFraction: 0.4, blendDuration: 0.5))
         .onTapGesture {
             //ontapgesture para habilitar toque
             //cambia valores y como son states, aplica cambios autoamtico
-            self.buttonColorChange.toggle()
-            self.iconColorChange.toggle()
+            //self.buttonColorChange.toggle()
+            //self.iconColorChange.toggle()
+            //self.iconSizeChange.toggle()
+            
+            //ahora animacion explicita
+            //con esto podemos decir que se anima y que no
+            withAnimation (.spring(response: 0.5, dampingFraction: 0.4, blendDuration: 0.5)) {
+                self.buttonColorChange.toggle()
+                self.iconColorChange.toggle()
+            }
             self.iconSizeChange.toggle()
         }
     }

@@ -13,6 +13,11 @@
 		C0B438DE24462A6A00A2ECA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0B438DD24462A6A00A2ECA8 /* Assets.xcassets */; };
 		C0B438E124462A6A00A2ECA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0B438E024462A6A00A2ECA8 /* Preview Assets.xcassets */; };
 		C0B438E424462A6A00A2ECA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0B438E224462A6A00A2ECA8 /* LaunchScreen.storyboard */; };
+		C0B438EC2446405F00A2ECA8 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B438EB2446405F00A2ECA8 /* LoadingView.swift */; };
+		C0B438EE244642AA00A2ECA8 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B438ED244642AA00A2ECA8 /* ProgressBarView.swift */; };
+		C0B438F024465EE200A2ECA8 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B438EF24465EE200A2ECA8 /* ProgressView.swift */; };
+		C0B438F22446647F00A2ECA8 /* DotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B438F12446647F00A2ECA8 /* DotsView.swift */; };
+		C0B438F42446677F00A2ECA8 /* MorphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B438F32446677F00A2ECA8 /* MorphView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		C0B438E024462A6A00A2ECA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C0B438E324462A6A00A2ECA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0B438E524462A6A00A2ECA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0B438EB2446405F00A2ECA8 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		C0B438ED244642AA00A2ECA8 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		C0B438EF24465EE200A2ECA8 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		C0B438F12446647F00A2ECA8 /* DotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsView.swift; sourceTree = "<group>"; };
+		C0B438F32446677F00A2ECA8 /* MorphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +69,15 @@
 				C0B438D724462A6600A2ECA8 /* AppDelegate.swift */,
 				C0B438D924462A6600A2ECA8 /* SceneDelegate.swift */,
 				C0B438DB24462A6600A2ECA8 /* ContentView.swift */,
+				C0B438EB2446405F00A2ECA8 /* LoadingView.swift */,
+				C0B438ED244642AA00A2ECA8 /* ProgressBarView.swift */,
+				C0B438EF24465EE200A2ECA8 /* ProgressView.swift */,
 				C0B438DD24462A6A00A2ECA8 /* Assets.xcassets */,
 				C0B438E224462A6A00A2ECA8 /* LaunchScreen.storyboard */,
 				C0B438E524462A6A00A2ECA8 /* Info.plist */,
 				C0B438DF24462A6A00A2ECA8 /* Preview Content */,
+				C0B438F12446647F00A2ECA8 /* DotsView.swift */,
+				C0B438F32446677F00A2ECA8 /* MorphView.swift */,
 			);
 			path = "08-Animations";
 			sourceTree = "<group>";
@@ -147,8 +162,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0B438D824462A6600A2ECA8 /* AppDelegate.swift in Sources */,
+				C0B438EC2446405F00A2ECA8 /* LoadingView.swift in Sources */,
+				C0B438F22446647F00A2ECA8 /* DotsView.swift in Sources */,
+				C0B438F42446677F00A2ECA8 /* MorphView.swift in Sources */,
 				C0B438DA24462A6600A2ECA8 /* SceneDelegate.swift in Sources */,
 				C0B438DC24462A6600A2ECA8 /* ContentView.swift in Sources */,
+				C0B438EE244642AA00A2ECA8 /* ProgressBarView.swift in Sources */,
+				C0B438F024465EE200A2ECA8 /* ProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
