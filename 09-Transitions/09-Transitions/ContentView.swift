@@ -41,12 +41,17 @@ struct ContentView: View {
                 //desplzaa hacia izquierda y desaparecer igual
                 //.transition(.offset(x: -700, y: 0))
                 
-                .transition(
+                /*.transition(
                     .asymmetric(insertion: .scale(scale: 0, anchor: .bottom), removal: .offset(x: -600, y: 0))
+                    //AnyTransition.combineTransition
+                )*/
+                .transition(AnyTransition.offset(x: -700, y: 0) //primero offset a la izquierda
+                    //.combined(with: AnyTransition.scale(scale: 0, anchor: .leading)) //ahora scala hacia abaho
+                    //.combined(with: AnyTransition.opacity)  //por ultimo opacidad
                 )
             }
         }.onTapGesture {
-            withAnimation(Animation.spring()){
+            withAnimation(Animation.default){
                 self.showTrans.toggle()
             }
         }
