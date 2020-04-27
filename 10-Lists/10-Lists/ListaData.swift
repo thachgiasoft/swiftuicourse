@@ -58,10 +58,10 @@ struct SubFullView: View {
     
     var curso: Curso
     var body: some View {
-        HStack{
+        ZStack{
             Image(curso.image)
                 .resizable()    //para redimensionar
-                .aspectRatio(contentMode: .fill)    //para no deformar imagen
+                .aspectRatio(contentMode: .fit)    //para no deformar imagen
                 .frame(height: 200) //dejarlo con un alto de 200
                 .cornerRadius(15)
                 //agrega capa gris para restrle importancia

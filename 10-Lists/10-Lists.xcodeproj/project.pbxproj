@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0B465992457425C006A9E0B /* ColorThings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B465982457425C006A9E0B /* ColorThings.swift */; };
 		FA0458A22454A1A30071D1DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0458A12454A1A30071D1DD /* AppDelegate.swift */; };
 		FA0458A42454A1A30071D1DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0458A32454A1A30071D1DD /* SceneDelegate.swift */; };
 		FA0458A62454A1A30071D1DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0458A52454A1A30071D1DD /* ContentView.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C0B465982457425C006A9E0B /* ColorThings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorThings.swift; sourceTree = "<group>"; };
 		FA04589E2454A1A30071D1DD /* 10-Lists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "10-Lists.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0458A12454A1A30071D1DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA0458A32454A1A30071D1DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				FA0458A32454A1A30071D1DD /* SceneDelegate.swift */,
 				FA0458A52454A1A30071D1DD /* ContentView.swift */,
 				FA0458B52454DA470071D1DD /* ListaData.swift */,
+				C0B465982457425C006A9E0B /* ColorThings.swift */,
 				FA0458A72454A1A60071D1DD /* Assets.xcassets */,
 				FA0458AC2454A1A60071D1DD /* LaunchScreen.storyboard */,
 				FA0458AF2454A1A60071D1DD /* Info.plist */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0B465992457425C006A9E0B /* ColorThings.swift in Sources */,
 				FA0458A22454A1A30071D1DD /* AppDelegate.swift in Sources */,
 				FA0458B62454DA470071D1DD /* ListaData.swift in Sources */,
 				FA0458A42454A1A30071D1DD /* SceneDelegate.swift in Sources */,
